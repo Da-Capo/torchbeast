@@ -21,7 +21,7 @@ if [ -z ${GRPC_DIR+x} ]; then
     GRPC_DIR=$(pwd)/third_party/grpc;
 fi
 
-PREFIX=${CONDA_PREFIX:-"$(dirname $(which conda))/../"}
+PREFIX=${CONDA_PREFIX:-"$(dirname $(which conda))/"}
 
 NPROCS=$(getconf _NPROCESSORS_ONLN)
 
